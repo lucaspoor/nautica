@@ -21,6 +21,13 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Montserrat`, `Open Sans`, `Roboto`],
+        display: "swap",
+      },
+    },
   ],
 };
 
