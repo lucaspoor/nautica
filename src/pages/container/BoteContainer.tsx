@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { BoatDetails } from "../pages/Boatdetails.js";
+import { BoatDetails } from "../pages/Boatdetails";
 import { BoteDatabase } from "../data/BoteDatabase.ts";
 import React, { useEffect } from "react";
 

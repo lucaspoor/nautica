@@ -1,14 +1,15 @@
+import React from "react";
 export default function Testimonies() {
   return (
     <section className="people-says">
       <div className="head">
         <h2>Nuestros Clientes</h2>
-        <img src="./Imgs/decoreGold.png" alt="img" />
+        <img src="/imgs/decoreGold.png" alt="img" />
       </div>
       <article className="reviews-container">
         <div className="slider">
           <div className="review">
-            <img src="./Imgs/avatar.jpg" alt="Client" />
+            <img src="/imgs/avatar.jpg" alt="Client" />
             <blockquote>
               Exercit ullamco laboris nisiut aliquip ex ea com irure dolor
               reprehs tempor incididunt ut labore dolore magna aliqua quis
@@ -22,7 +23,7 @@ export default function Testimonies() {
             </div>
           </div>
           <div className="review">
-            <img src="./Imgs/avatar.jpg" alt="Client" />
+            <img src="/imgs/avatar.jpg" alt="Client" />
             <blockquote>
               Exercit ullamco laboris nisiut aliquip ex ea com irure dolor
               reprehs tempor incididunt ut labore dolore magna aliqua quis
@@ -36,7 +37,7 @@ export default function Testimonies() {
             </div>
           </div>
           <div className="review">
-            <img src="./Imgs/avatar.jpg" alt="Client" />
+            <img src="/imgs/avatar.jpg" alt="Client" />
             <blockquote>
               Exercit ullamco laboris nisiut aliquip ex ea com irure dolor
               reprehs tempor incididunt ut labore dolore magna aliqua quis
@@ -50,7 +51,7 @@ export default function Testimonies() {
             </div>
           </div>
           <div className="review">
-            <img src="./Imgs/avatar.jpg" alt="Client" />
+            <img src="/imgs/avatar.jpg" alt="Client" />
             <blockquote>
               Exercit ullamco laboris nisiut aliquip ex ea com irure dolor
               reprehs tempor incididunt ut labore dolore magna aliqua quis

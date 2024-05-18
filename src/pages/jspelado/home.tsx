@@ -93,13 +93,13 @@ export function home() {
       scrollItems.forEach((i) => {
         i.classList.add("scrolling");
       });
-      logo.src = "../Imgs/logo-dark.png";
+      logo.src = "/imgs/logo-dark.png";
       barsIcon.style.color = "#222";
     } else {
       scrollItems.forEach((i) => {
         i.classList.remove("scrolling");
       });
-      logo.src = "../Imgs/logo-light.png";
+      logo.src = "/imgs/logo-light.png";
       barsIcon.style.color = "#fff";
     }
   }

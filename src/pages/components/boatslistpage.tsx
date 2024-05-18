@@ -13,7 +13,7 @@ export default function BoatsPage(props) {
         <div className="container">
           <nav className="flex-between scroll-event">
             <a href="../index.html">
-              <img src="../Imgs/logo-light.png" alt="Logo" className="logo" />
+              <img src="/imgs/logo-light.png" alt="Logo" className="logo" />
             </a>
             <i className="fa-solid fa-bars bars-icon burger-icon"></i>
             <div className="links scroll-event">
@@ -137,7 +137,7 @@ export default function BoatsPage(props) {
           <article className="boats one">
             <div className="col">
               <div className="img">
-                <img src="../Imgs/bl11.jpg" alt="Boat" />
+                <img src="/imgs/bl11.jpg" alt="Boat" />
                 <i className="fa-solid fa-bars-staggered show-icon"></i>
               </div>
               <div className="boat-data">
@@ -207,7 +207,7 @@ export default function BoatsPage(props) {
             </div>
             <div className="col">
               <div className="img">
-                <img src="../Imgs/bl12.jpg" alt="Boat" />
+                <img src="/imgs/bl12.jpg" alt="Boat" />
                 <i className="fa-solid fa-bars-staggered show-icon"></i>
               </div>
               <div className="boat-data">
@@ -277,7 +277,7 @@ export default function BoatsPage(props) {
             </div>
             <div className="col">
               <div className="img">
-                <img src="../Imgs/bl13.jpg" alt="Boat" />
+                <img src="/imgs/bl13.jpg" alt="Boat" />
                 <i className="fa-solid fa-bars-staggered show-icon"></i>
               </div>
               <div className="boat-data">
@@ -347,7 +347,7 @@ export default function BoatsPage(props) {
             </div>
             <div className="col">
               <div className="img">
-                <img src="../Imgs/bl14.jpg" alt="Boat" />
+                <img src="/imgs/bl14.jpg" alt="Boat" />
                 <i className="fa-solid fa-bars-staggered show-icon"></i>
               </div>
               <div className="boat-data">
@@ -417,7 +417,7 @@ export default function BoatsPage(props) {
             </div>
             <div className="col">
               <div className="img">
-                <img src="../Imgs/bl15.jpg" alt="Boat" />
+                <img src="/imgs/bl15.jpg" alt="Boat" />
                 <i className="fa-solid fa-bars-staggered show-icon"></i>
               </div>
               <div className="boat-data">
@@ -487,7 +487,7 @@ export default function BoatsPage(props) {
             </div>
             <div className="col">
               <div className="img">
-                <img src="../Imgs/bl16.jpg" alt="Boat" />
+                <img src="/imgs/bl16.jpg" alt="Boat" />
                 <i className="fa-solid fa-bars-staggered show-icon"></i>
               </div>
               <div className="boat-data">

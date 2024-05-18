@@ -1,9 +1,9 @@
-import { boatlist } from "../jspelado/boat-list.js";
+import { boatlist } from "../jspelado/boat-list";
 import React, { useState } from "react";
 import info from "../data/boats.json";
 import { Link } from "react-router-dom";
-import NavBarBootstrap from "../components/BootstrapNav.js";
-import Footer from "../components/footer.js";
+import NavBarBootstrap from "../components/BootstrapNav";
+import Footer from "../components/footer";
 
 export default function BoatsPage(props) {
   React.useEffect(() => {

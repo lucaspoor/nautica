@@ -1,4 +1,5 @@
-import { FormContacto } from "./formcontacto.tsx";
+import React from "react";
+import { FormContacto } from "./formcontacto";
 
 export default function FormFaqs() {
   return (
@@ -11,7 +12,7 @@ export default function FormFaqs() {
               ¿Tiene alguna duda? ¡Déjenos ayudarlo! Complete este formulario y
               estaremos encantados de responder a sus consultas.
             </p>
-            <img src="./Imgs/decoreGold.png" alt="Img" />
+            <img src="/imgs/decoreGold.png" alt="Img" />
           </div>
 
           <FormContacto></FormContacto>
@@ -23,7 +24,7 @@ export default function FormFaqs() {
               Explora nuestras preguntas frecuentes, si no encuentras lo que
               buscas, no dudes en ponerte en contacto con nosotros.
             </p>
-            <img src="./Imgs/decoreGold.png" alt="Img" />
+            <img src="/imgs/decoreGold.png" alt="Img" />
           </div>
           <article className="FAQ-holder">
             <div className="question-holder">

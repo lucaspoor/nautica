@@ -1,8 +1,9 @@
+import React from "react";
 export default function NavBar() {
   return (
     <nav className="flex-between scroll-event">
-      <a href="./index.html">
-        <img src="./Imgs/logo-light.png" alt="Logo" className="logo" />
+      <a href="/">
+        <img src="/imgs/logo-light.png" alt="Logo" className="logo" />
       </a>
       <i className="fa-solid fa-bars bars-icon burger-icon" />
       <div className="links scroll-event">

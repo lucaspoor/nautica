@@ -1,5 +1,6 @@
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { boatsinfo } from "../data/boatdetails.js";
+import { boatsinfo } from "../data/boatdetails";
 
 export default function BoatDetails() {
   return (
@@ -9,7 +10,7 @@ export default function BoatDetails() {
           <div className="container">
             <nav className="flex-between scroll-event">
               <a href="../index.html">
-                <img src="../Imgs/logo-light.png" alt="Logo" className="logo" />
+                <img src="/imgs/logo-light.png" alt="Logo" className="logo" />
               </a>
               <i className="fa-solid fa-bars bars-icon burger-icon" />
               <div className="links scroll-event">
@@ -303,13 +304,13 @@ export default function BoatDetails() {
                   <h2>$ 42.200.000 </h2>
                 </div>
                 <div className="payment">
-                  <img src="../Imgs/payment-icon_02.png" alt="Payment" />
+                  <img src="/imgs/payment-icon_02.png" alt="Payment" />
                   <p>Included Taxes &amp; Checkup*</p>
                 </div>
               </div>
               <div className="seller-data">
                 <div className="name flex-between">
-                  <img src="../Imgs/yteam001.jpg" alt="Seller" />
+                  <img src="/imgs/yteam001.jpg" alt="Seller" />
                   <div className="data">
                     <span className="seller-name">Carlos Calderón</span>
                     <span className="Membership">Dueño NauticaCalderon</span>

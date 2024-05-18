@@ -3,7 +3,7 @@ export default function VideoSection() {
     <section className="plan-tour">
       <div className="container flex-between">
         <article className="text-us">
-          <img src="./Imgs/decore01.png" alt="Img" />
+          <img src="/imgs/decore01.png" alt="Img" />
           <span>
             Give us a call or drop an email, We endeavor to answer within 24
             hours

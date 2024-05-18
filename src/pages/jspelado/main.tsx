@@ -3,7 +3,7 @@ export default function main() {
   // ---------------- landing Page change ---------------------//
   let textBox = document.querySelectorAll(".textbox");
   let activeBox = 0;
-  let imgs = ["url(../Imgs/Main.jpg)", "url(../Imgs/Main1.jpg)"];
+  let imgs = ["url(/imgs/Main.jpg)", "url(/imgs/Main1.jpg)"];
   let angles = document.querySelectorAll(".angles");
   let landing = document.querySelector(".landing");
   let activeImg = 0;
@@ -90,13 +90,13 @@ export default function main() {
       scrollItems.forEach((i) => {
         i.classList.add("scrolling");
       });
-      logo.src = "../Imgs/logo-dark.png";
+      logo.src = "/imgs/logo-dark.png";
       barsIcon.style.color = "#222";
     } else {
       scrollItems.forEach((i) => {
         i.classList.remove("scrolling");
       });
-      logo.src = "../Imgs/logo-light.png";
+      logo.src = "/imgs/logo-light.png";
       barsIcon.style.color = "#fff";
     }
   }

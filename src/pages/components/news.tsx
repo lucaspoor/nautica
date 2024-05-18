@@ -8,12 +8,12 @@ export default function News() {
           aliquip duis aute irure dolorin reprehenderits vol dolore fugiat nulla
           pariatur excepteur sint occaecat cupidatat.
         </p>
-        <img src="./Imgs/decore-blue.png" alt="Img" />
+        <img src="/imgs/decore-blue.png" alt="Img" />
       </article>
       <div className="container">
         <div className="col">
           <div className="pic">
-            <img src="./Imgs/sailing-on-vacation-EUT5FWG.jpg" alt="img" />
+            <img src="/imgs/sailing-on-vacation-EUT5FWG.jpg" alt="img" />
           </div>
           <span className="date">
             June 15, 2020 by <span> Nevica </span>
@@ -33,7 +33,7 @@ export default function News() {
         </div>
         <div className="col">
           <div className="pic">
-            <img src="./Imgs/326576456534.jpg" alt="img" />
+            <img src="/imgs/326576456534.jpg" alt="img" />
           </div>
           <span className="date">
             June 12, 2020 by <span> Nevica </span>
@@ -53,7 +53,7 @@ export default function News() {
         </div>
         <div className="col">
           <div className="pic">
-            <img src="./Imgs/sailing-on-vacation-EUT5FWG34.jpg" alt="img" />
+            <img src="/imgs/sailing-on-vacation-EUT5FWG34.jpg" alt="img" />
           </div>
           <span className="date">
             June 3, 2020 by <span> Nevica </span>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavHashLink } from "react-router-hash-link";
+import React from "react";
 
 export default function ReactNavBar() {
   const [sidebar, setSidebar] = useState(false);
@@ -9,8 +10,8 @@ export default function ReactNavBar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg flex-between reactnav centernav">
-        <a href="/index.html">
-          <img src="/Imgs/logo-light.png" alt="Logo" className="logo mlogo" />
+        <a href="/">
+          <img src="/imgs/logo-light.png" alt="Logo" className="logo mlogo" />
         </a>
         <button
           className="navbar-toggler"

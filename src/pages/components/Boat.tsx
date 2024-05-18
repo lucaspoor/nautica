@@ -1,3 +1,4 @@
+import React from "react";
 import data from "../data/boats.json";
 import { Link } from "react-router-dom";
 
@@ -23,17 +24,17 @@ export default function Products(props) {
 
                   <div className="data flex-between p-3">
                     <div className="guest inf">
-                      <i class="fa-regular fa-copyright m-1"></i>
+                      <i className="fa-regular fa-copyright m-1"></i>
                       <span> {d.marca} </span>
                     </div>
 
                     <div className="guest inf">
-                      <i class="fa-solid fa-clock m-1"></i>
+                      <i className="fa-solid fa-clock m-1"></i>
                       <span> {d.Horas}</span>
                     </div>
 
                     <div className="beds inf">
-                      <i class="fa-solid fa-calendar-days m-1"></i>
+                      <i className="fa-solid fa-calendar-days m-1"></i>
                       <span> {d.año} </span>
                     </div>
 

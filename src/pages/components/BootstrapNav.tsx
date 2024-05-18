@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -23,7 +24,7 @@ function NavBarBootstrap() {
         <Navbar.Brand href="/">
           <img
             className="logo"
-            src={scroll ? "/Imgs/logo-dark.png" : "/Imgs/logo-light.png"}
+            src={scroll ? "/imgs/logo-dark.png" : "/imgs/logo-light.png"}
           ></img>
         </Navbar.Brand>
         <Navbar.Toggle className="border-0 ">

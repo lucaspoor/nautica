@@ -1,4 +1,5 @@
 import Sidebar from "react-bootstrap-sidebar-menu";
+import React from "react";
 
 export default function SideBar() {
   return (
@@ -8,7 +9,7 @@ export default function SideBar() {
           <Sidebar.Brand>
             {" "}
             <a href="/index.html">
-              <img src="/Imgs/logo-light.png" alt="Logo" className="logo" />{" "}
+              <img src="/imgs/logo-light.png" alt="Logo" className="logo" />{" "}
             </a>
           </Sidebar.Brand>
           <Sidebar.Toggle />

@@ -1,11 +1,12 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
+import { ScrollToTop } from "./components/utils/ScrollToTop";
 
 import "./App.css";
 
 import BoatsPage from "./pages/boatslistpage";
 import PageMain from "./pages/pagemain";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { BoteContainer } from "./container/BoteContainer";
 
 const pageStyles = {
@@ -143,16 +144,22 @@ const links = [
   },
 ];
 
-const IndexPage: React.FC<PageProps> = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<PageMain />} />
-      <Route path="/index.html" element={<PageMain />} />
-      <Route path="/Listadebotes" element={<BoatsPage />} />
-      <Route path="/Listadebotes/:id" element={<BoteContainer />} />
-    </Routes>
-  );
-};
+const App: React.FC = () => (
+  <Routes>
+    <Route path="/" element={<PageMain />} />
+    <Route path="/index.html" element={<PageMain />} />
+    <Route path="/Listadebotes" element={<BoatsPage />} />
+    <Route path="/Listadebotes/:id" element={<BoteContainer />} />
+  </Routes>
+);
+
+const IndexPage: React.FC<PageProps> = () => (
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
 
 export default IndexPage;
 

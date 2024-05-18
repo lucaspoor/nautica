@@ -1,4 +1,4 @@
-import main from "../jspelado/main";
+import React from "react";
 import NavBar from "./navbar";
 import { HashLink as Link } from "react-router-hash-link";
 

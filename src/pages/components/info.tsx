@@ -1,3 +1,4 @@
+import React from "react";
 export default function Info() {
   return (
     <section className="providing ">
@@ -30,7 +31,7 @@ export default function Info() {
           </article>
 
           <article className="img col">
-            <img src="/Imgs/lanchasinfo3(1).png" alt="Img" />
+            <img src="/imgs/lanchasinfo3(1).png" alt="Img" />
           </article>
         </article>
       </div>

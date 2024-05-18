@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="col">
             <a href="#">
               {" "}
-              <img src="/Imgs/logo-light.png" alt="Logo" />
+              <img src="/imgs/logo-light.png" alt="Logo" />
             </a>
             <p>
               Nos apasiona brindar experiencias incomparables en el agua. Nos

@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import boatsinfo from "../data/boats.json";
+import React from "react";
 import NavBar from "../components/navbar";
 import NavBarBootstrap from "../components/BootstrapNav";
 import Footer from "../components/footer";
@@ -23,7 +23,7 @@ export function BoatDetails({ bote }) {
         {" "}
         <img
           alt="Chat on WhatsApp"
-          src="/Imgs/whatsapp.svg"
+          src="/imgs/whatsapp.svg"
           className="iconowsp"
         ></img>
       </ClickToChat>
@@ -153,10 +153,18 @@ export function BoatDetails({ bote }) {
             </article>
           </article>
           <article className="seller-info">
-            <div className="price">
-              <div className="holder">
-                <h2>{bote.tittle} </h2>
-              </div>
+            <div className="">
+              <h2
+                style={{
+                  width: "100%",
+                  color: "black",
+                  textAlign: "center",
+                  paddingBottom: ".5em",
+                }}
+              >
+                {bote.tittle}{" "}
+              </h2>
+
               <div className="payment">
                 <h3>{bote.value}</h3>
                 <p>Pesos Chilenos</p>
@@ -164,7 +172,7 @@ export function BoatDetails({ bote }) {
             </div>
             <div className="seller-data">
               <div className="name flex-between">
-                <img src="../Imgs/doncarlos.png" alt="Seller" />
+                <img src="/imgs/doncarlos.png" alt="Seller" />
                 <div className="data">
                   <span className="seller-name">Carlos Calderón</span>
                   <span className="Membership">Dueño NauticaCalderon</span>

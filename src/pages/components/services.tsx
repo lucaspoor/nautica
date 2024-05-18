@@ -8,7 +8,7 @@ export default function Services() {
             <br />
             Rental Services
           </h2>
-          <img src="./Imgs/decore01.png" alt="img" />
+          <img src="/imgs/decore01.png" alt="img" />
           <p>
             Eorem ipsum dolor amet consectetur sed adipisicing elit sed eiusmod
             tempor et dolore magna aliqua minim veniam, quis nostrud
@@ -21,10 +21,10 @@ export default function Services() {
             <div className="options-holder">
               <div className="opt">
                 <div className="option-img">
-                  <img src="./Imgs/offers2.jpg" alt="Option" />
+                  <img src="/imgs/offers2.jpg" alt="Option" />
                 </div>
                 <h3>Water Sports Boat</h3>
-                <img src="./Imgs/decore01.png" alt="img" />
+                <img src="/imgs/decore01.png" alt="img" />
                 <p>
                   Adipisicing eiusmod tempor incidids labore dolore magna aliqa
                   ust enim ad minim veniams quis nostrs sed citation ullam coy
@@ -33,10 +33,10 @@ export default function Services() {
               </div>
               <div className="opt">
                 <div className="option-img">
-                  <img src="./Imgs/offers3.jpg" alt="Option" />
+                  <img src="/imgs/offers3.jpg" alt="Option" />
                 </div>
                 <h3>Corporate Events</h3>
-                <img src="./Imgs/decore01.png" alt="img" />
+                <img src="/imgs/decore01.png" alt="img" />
                 <p>
                   Adipisicing eiusmod tempor incidids labore dolore magna aliqa
                   ust enim ad minim veniams quis nostrs sed citation ullam coy
@@ -45,10 +45,10 @@ export default function Services() {
               </div>
               <div className="opt">
                 <div className="option-img">
-                  <img src="./Imgs/offers4.jpg" alt="Option" />
+                  <img src="/imgs/offers4.jpg" alt="Option" />
                 </div>
                 <h3>Family Gathering</h3>
-                <img src="./Imgs/decore01.png" alt="img" />
+                <img src="/imgs/decore01.png" alt="img" />
                 <p>
                   Adipisicing eiusmod tempor incidids labore dolore magna aliqa
                   ust enim ad minim veniams quis nostrs sed citation ullam coy
@@ -57,10 +57,10 @@ export default function Services() {
               </div>
               <div className="opt">
                 <div className="option-img">
-                  <img src="./Imgs/offers2.jpg" alt="Option" />
+                  <img src="/imgs/offers2.jpg" alt="Option" />
                 </div>
                 <h3>Family Gathering</h3>
-                <img src="./Imgs/decore01.png" alt="img" />
+                <img src="/imgs/decore01.png" alt="img" />
                 <p>
                   Adipisicing eiusmod tempor incidids labore dolore magna aliqa
                   ust enim ad minim veniams quis nostrs sed citation ullam coy
