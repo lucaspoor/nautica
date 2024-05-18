@@ -1,12 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
 import React from "react";
-import NavBar from "../components/navbar";
-import NavBarBootstrap from "../components/BootstrapNav";
 import Footer from "../components/footer";
 import ClickToChat from "../components/utils/clicktochat";
-import { string } from "yup";
 import ReactNavBar from "../components/reactnavbar";
-import SideBar from "../components/reactbo";
 
 export function BoatDetails({ bote }) {
   const casco = bote.materialCasco;
@@ -213,14 +209,14 @@ export function BoatDetails({ bote }) {
                   name="name"
                   id="client-name"
                   placeholder="Nombre"
-                  required=""
+                  required
                 />
                 <textarea
                   name="message"
                   id="message"
                   rows={10}
                   placeholder="Deja Tu Mensaje"
-                  required=""
+                  required
                   defaultValue={""}
                 />
                 <input

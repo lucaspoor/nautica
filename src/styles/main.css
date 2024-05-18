@@ -637,6 +637,7 @@ header .container .data .phone {
   font-size: 62px;
   font-weight: 600;
   margin: 5px 0 25px;
+  color: white;
 }
 /* at mobile screens */
 @media (max-width: 767px) {
