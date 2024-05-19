@@ -24,7 +24,7 @@ const render = (status: Status) => {
   return <h1>{status}</h1>;
 };
 
-const googleMapsApiKey = "AIzaSyDtZNoKOpZlwrfXYaq4rxVJKV2eNMswlcc";
+const googleMapsApiKey = process.env.GOOGLE_MAPS_KEY;
 const center = { lat: -39.28743580079332, lng: -71.94501382656382 };
 const zoom = 12;
 
