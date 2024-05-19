@@ -34,7 +34,7 @@ function PageMain() {
         {" "}
         <img
           alt="Chat on WhatsApp"
-          src="/Imgs/whatsapp.svg"
+          src="/imgs/whatsapp.svg"
           className="iconowsp"
         ></img>
       </ClickToChat>

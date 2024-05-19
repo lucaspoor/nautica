@@ -74,55 +74,62 @@ export function FormContacto() {
         errors,
       }) => (
         <Form noValidate onSubmit={handleSubmit} method="POST">
-          <Form
-            className="flex-between"
-            style={{ margin: 0, padding: 0, backgroundColor: "white" }}
-          >
-            <Form.Control
-              style={{ marginTop: 3 }}
-              type="text"
-              name="nombre"
-              placeholder="Nombre"
-              value={values.nombre}
-              onChange={handleChange}
-              isValid={touched.nombre && !errors.nombre}
-              isInvalid={!!errors.nombre}
-            />
-            <Form.Control.Feedback>Se ve bien!</Form.Control.Feedback>
+          <Form.Control
+            style={{ marginTop: 3 }}
+            type="text"
+            name="nombre"
+            placeholder="Nombre"
+            value={values.nombre}
+            onChange={handleChange}
+            isValid={touched.nombre && !errors.nombre}
+            isInvalid={!!errors.nombre}
+          />
+          {touched.nombre && !errors.nombre && (
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          )}
+          {touched.nombre && errors.nombre && (
             <Form.Control.Feedback type="invalid">
               {errors.nombre}
             </Form.Control.Feedback>
+          )}
 
-            <Form.Control
-              type="text"
-              name="asunto"
-              value={values.asunto}
-              placeholder="Asunto"
-              onChange={handleChange}
-              isValid={touched.asunto && !errors.asunto}
-              isInvalid={!!errors.asunto}
-            />
+          <Form.Control
+            type="text"
+            name="asunto"
+            value={values.asunto}
+            placeholder="Asunto"
+            onChange={handleChange}
+            isValid={touched.asunto && !errors.asunto}
+            isInvalid={!!errors.asunto}
+          />
 
-            <Form.Control.Feedback>Se ve bien!</Form.Control.Feedback>
+          {touched.asunto && !errors.asunto && (
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          )}
+          {touched.asunto && errors.asunto && (
             <Form.Control.Feedback type="invalid">
               {errors.asunto}
             </Form.Control.Feedback>
+          )}
 
-            <Form.Control
-              type="text"
-              placeholder="Email"
-              aria-describedby="inputGroupPrepend"
-              name="email"
-              value={values.email}
-              onChange={handleChange}
-              isValid={touched.email && !errors.email}
-              isInvalid={!!errors.email}
-            />
+          <Form.Control
+            type="text"
+            placeholder="Email"
+            aria-describedby="inputGroupPrepend"
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+            isValid={touched.email && !errors.email}
+            isInvalid={!!errors.email}
+          />
+          {touched.email && !errors.email && (
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          )}
+          {touched.email && errors.email && (
             <Form.Control.Feedback type="invalid">
               {errors.email}
             </Form.Control.Feedback>
-          </Form>
+          )}
 
           <Form.Control
             as="textarea"
