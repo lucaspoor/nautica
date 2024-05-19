@@ -3,9 +3,12 @@ import React from "react";
 import Footer from "../components/footer";
 import ClickToChat from "../components/utils/clicktochat";
 import ReactNavBar from "../components/reactnavbar";
+import { BoatsDatabase } from "../../BoatsDatabase";
+import { BarraExploracion } from "./BarraExploracion";
 
 export function BoatDetails({ bote }) {
   const casco = bote.materialCasco;
+  const [prev, next] = BoatsDatabase.findPrevNext(bote);
   //   console.lo g(casco.value);
   return (
     <>
@@ -26,6 +29,7 @@ export function BoatDetails({ bote }) {
       <section className="details mt-5">
         <div className="container flex-start">
           <article className="features">
+            <BarraExploracion prev={prev} bote={bote} next={next} />
             <Carousel>
               <Carousel.Item>
                 <img
@@ -81,7 +85,7 @@ export function BoatDetails({ bote }) {
             </div>
             <article className="boat-specific">
               <h3></h3>
-              <div className="Specifications">
+              <div style={{ marginBottom: "1.5em" }} className="Specifications">
                 <div className="feat">
                   <span className="key">Marca:</span>
                   <span className="value">{bote.marca} </span>

@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
-import { ScrollToTop } from "./components/utils/ScrollToTop";
+import { ScrollToTop } from "./ScrollToTop";
 
 import "./App.css";
 
@@ -156,6 +156,7 @@ const App: React.FC = () => (
 const IndexPage: React.FC<PageProps> = () => (
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </React.StrictMode>
