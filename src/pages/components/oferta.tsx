@@ -3,11 +3,6 @@ import { Mapa } from "./Mapa";
 export default function Oferta() {
   return (
     <section className="deal ">
-      <script
-        async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtZNoKOpZlwrfXYaq4rxVJKV2eNMswlcc&callback=console.debug&libraries=maps,marker&v=beta"
-      ></script>
-
       <div className="container">
         <article className="day-deal flex-between">
           <div id="conte" className=" w-100">
