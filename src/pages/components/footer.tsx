@@ -1,5 +1,5 @@
-import { HashLink as Link } from "react-router-hash-link";
 import data from "../data/boats.json";
+import { Link } from "gatsby";
 import React from "react";
 
 export default function Footer() {
@@ -19,7 +19,7 @@ export default function Footer() {
             </p>
             <h2 className="mt-0 ">¡Ven y conoce nuestras lanchas!</h2>
 
-            <Link smooth to="#linkcontacto" className="confirm ">
+            <Link to="#linkcontacto" className="confirm ">
               {" "}
               AGENDAR VISITA
             </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
               {data.map((d) => {
                 return (
                   <li>
-                    <Link to={`/Listadebotes/${d.id}`}>
+                    <Link to={`/listadebotes?bote=${d.id}`}>
                       {" "}
                       <a href="#">{d.tittle}</a>{" "}
                     </Link>

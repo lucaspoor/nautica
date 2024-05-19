@@ -1,7 +1,7 @@
 import { boatlist } from "../jspelado/boat-list";
+import { Link } from "gatsby";
 import React, { useState } from "react";
 import info from "../data/boats.json";
-import { Link } from "react-router-dom";
 import NavBarBootstrap from "../components/BootstrapNav";
 import Footer from "../components/footer";
 
@@ -64,7 +64,7 @@ export default function BoatsPage(props) {
                       citation ullam laboris nisi ut aliquip laborisea commodo
                       ...
                     </p>
-                    <Link to={`/Listadebotes/${i.id}`}>READ MORE</Link>
+                    <Link to={`/listadebotes?bote=${i.id}`}>READ MORE</Link>
                   </div>
                   <div className="details excepcionpadding">
                     <div className="details-head">

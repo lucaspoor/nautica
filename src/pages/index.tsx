@@ -6,7 +6,6 @@ import "./App.css";
 
 import BoatsPage from "./pages/boatslistpage";
 import PageMain from "./pages/pagemain";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { BoteContainer } from "./container/BoteContainer";
 
 const pageStyles = {
@@ -144,21 +143,9 @@ const links = [
   },
 ];
 
-const App: React.FC = () => (
-  <Routes>
-    <Route path="/" element={<PageMain />} />
-    <Route path="/index.html" element={<PageMain />} />
-    <Route path="/Listadebotes" element={<BoatsPage />} />
-    <Route path="/Listadebotes/:id" element={<BoteContainer />} />
-  </Routes>
-);
-
 const IndexPage: React.FC<PageProps> = () => (
   <React.StrictMode>
-    <BrowserRouter>
-      <ScrollToTop />
-      <App />
-    </BrowserRouter>
+    <PageMain />
   </React.StrictMode>
 );
 

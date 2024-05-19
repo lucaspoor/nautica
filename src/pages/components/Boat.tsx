@@ -1,6 +1,6 @@
+import { Link } from "gatsby";
 import React from "react";
 import data from "../data/boats.json";
-import { Link } from "react-router-dom";
 
 export default function Products(props) {
   const handleClick = props.manejar;
@@ -11,7 +11,7 @@ export default function Products(props) {
           {data.map((d) => {
             return (
               <div className="card ">
-                <Link to={`/Listadebotes/${d.id}`}>
+                <Link to={`/listadebotes?bote=${d.id}`}>
                   <div className="img">
                     <img src={d.imagen} alt="Boat" />
                   </div>

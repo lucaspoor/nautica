@@ -4,8 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useState, useEffect } from "react";
-import { HashLink as Link } from "react-router-hash-link";
-import { NavHashLink } from "react-router-hash-link";
 
 function NavBarBootstrap() {
   const [scroll, setScroll] = useState(false);

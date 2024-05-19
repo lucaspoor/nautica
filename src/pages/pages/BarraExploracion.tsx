@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 
 export const barra: React.CSSProperties = {
   padding: ".75em 1em",
@@ -52,7 +52,7 @@ function LinkBotePrev({ bote }: { bote: Bote }) {
 
   return (
     <Link
-      to={`/Listadebotes/${bote.id}`}
+      to={`/listadebotes?bote=${bote.id}`}
       style={{
         display: "flex",
         alignItems: "center",
@@ -96,7 +96,7 @@ function LinkBoteNext({ bote }: { bote: Bote }) {
 
   return (
     <Link
-      to={`/Listadebotes/${bote.id}`}
+      to={`/listadebotes?bote=${bote.id}`}
       style={{
         display: "flex",
         alignItems: "center",

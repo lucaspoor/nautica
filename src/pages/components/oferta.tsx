@@ -18,7 +18,7 @@ export default function Oferta() {
           </div>
           <article className="deal-content">
             <span className="head">¿Donde Encontarnos?</span>
-            <p className="boat-name">Nuestra Ubicación</p>
+            <p className="boat-name">Ubicación</p>
             <p className="boat-data">
               País: Chile | Región: Araucanía | Comuna: Pucón | Dirección:
               Camino internacional 363 | Nos encontramos detras de la Petrobras

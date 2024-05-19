@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import { BoatDetails } from "../pages/Boatdetails";
 import { BoteDatabase } from "../data/BoteDatabase";
 import React, { useEffect } from "react";

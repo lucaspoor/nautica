@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavHashLink } from "react-router-hash-link";
+import { Link } from "gatsby";
 import React from "react";
 
 export default function ReactNavBar() {
@@ -27,27 +27,24 @@ export default function ReactNavBar() {
         </button>
         <div className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="navbar-nav  ulnav">
-            <NavHashLink
-              to="/#"
-              className="list-item abootnav aBootstrap linknav"
-            >
+            <Link to="/#" className="list-item abootnav aBootstrap linknav">
               INICIO
-            </NavHashLink>
-            <NavHashLink to="/#fleet" className="list-item  aBootstrap linknav">
+            </Link>
+            <Link to="/#fleet" className="list-item  aBootstrap linknav">
               NUESTRAS LANCHAS
-            </NavHashLink>
-            <NavHashLink
+            </Link>
+            <Link
               to="/#linkubicacion"
               className="list-item  aBootstrap linknav"
             >
               UBICACIÓN
-            </NavHashLink>
-            <NavHashLink
+            </Link>
+            <Link
               to="/#linkcontacto"
               className="list-item  aBootstrap linknav bloque"
             >
               CONTACTO
-            </NavHashLink>
+            </Link>
             <a href="/#linkcontacto"> canguro</a>
           </ul>
         </div>
@@ -57,24 +54,18 @@ export default function ReactNavBar() {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mr-auto ularreglo">
-            <NavHashLink to="/#" className="list-item abootnav aBootstrap f ">
+            <Link to="/#" className="list-item abootnav aBootstrap f ">
               INICIO
-            </NavHashLink>
-            <NavHashLink to="/#fleet" className="list-item  aBootstrap f">
+            </Link>
+            <Link to="/#fleet" className="list-item  aBootstrap f">
               NUESTRAS LANCHAS
-            </NavHashLink>
-            <NavHashLink
-              to="/#linkubicacion"
-              className="list-item  aBootstrap f"
-            >
+            </Link>
+            <Link to="/#linkubicacion" className="list-item  aBootstrap f">
               UBICACIÓN
-            </NavHashLink>
-            <NavHashLink
-              to="/#linkcontacto"
-              className="list-item  aBootstrap f"
-            >
+            </Link>
+            <Link to="/#linkcontacto" className="list-item  aBootstrap f">
               CONTACTO
-            </NavHashLink>
+            </Link>
           </ul>
           <form className="form-inline my-2 my-lg-0"></form>
         </div>

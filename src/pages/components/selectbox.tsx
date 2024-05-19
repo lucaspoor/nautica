@@ -1,5 +1,4 @@
 import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
 
 export default function SelectBox() {
   return (
@@ -16,10 +15,10 @@ export default function SelectBox() {
         </p>
       </article>
 
-      <Link smooth to="#linkcontacto" className="main search p-4 ">
+      <a href="#linkcontacto" className="main search p-4 ">
         {" "}
         Ir al Contacto
-      </Link>
+      </a>
     </section>
   );
 }

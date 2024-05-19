@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "./navbar";
-import { HashLink as Link } from "react-router-hash-link";
 
 export default function Landing() {
   return (
@@ -16,9 +15,9 @@ export default function Landing() {
               <br />
               <span className="lux">Inicia </span> Con Nosotros
             </p>
-            <Link smooth to="#linklanchas" className="explore">
+            <a href="#linklanchas" className="explore">
               Explorar Ahora{" "}
-            </Link>
+            </a>
           </article>
           <article className="textbox">
             <span>Recorre Las Aguas </span>
@@ -26,9 +25,9 @@ export default function Landing() {
               Las Más Confiables <br />
               <span className="dark">Lanchas</span> De Pucón
             </p>
-            <Link smooth to="#linklanchas" className="explore">
+            <a href="#linklanchas" className="explore">
               Ver Lanchas{" "}
-            </Link>
+            </a>
           </article>
         </section>
         <i className="fa-solid fa-chevron-right angles" />
