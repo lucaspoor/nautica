@@ -1,20 +1,17 @@
 import React from "react";
+import { Mapa } from "./Mapa";
 export default function Oferta() {
   return (
     <section className="deal ">
+      <script
+        async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtZNoKOpZlwrfXYaq4rxVJKV2eNMswlcc&callback=console.debug&libraries=maps,marker&v=beta"
+      ></script>
+
       <div className="container">
         <article className="day-deal flex-between">
           <div id="conte" className=" w-100">
-            <gmp-map
-              center="-39.28743580079332, -71.94501382656382"
-              zoom="12"
-              map-id="DEMO_MAP_ID"
-            >
-              <gmp-advanced-marker
-                position="-39.28743580079332, -71.94501382656382"
-                title="My location"
-              ></gmp-advanced-marker>
-            </gmp-map>
+            <Mapa />
           </div>
           <article className="deal-content">
             <span className="head">¿Donde Encontarnos?</span>

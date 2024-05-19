@@ -1,5 +1,4 @@
 import data from "../data/boats.json";
-import { Link } from "gatsby";
 import React from "react";
 
 export default function Footer() {
@@ -19,10 +18,10 @@ export default function Footer() {
             </p>
             <h2 className="mt-0 ">¡Ven y conoce nuestras lanchas!</h2>
 
-            <Link to="#linkcontacto" className="confirm ">
+            <a href="#linkcontacto" className="confirm ">
               {" "}
               AGENDAR VISITA
-            </Link>
+            </a>
           </div>
           <div className="col">
             <h2>Secciones</h2>
@@ -51,10 +50,7 @@ export default function Footer() {
               {data.map((d) => {
                 return (
                   <li>
-                    <Link to={`/listadebotes?bote=${d.id}`}>
-                      {" "}
-                      <a href="#">{d.tittle}</a>{" "}
-                    </Link>
+                    <a href={`/listadebotes?bote=${d.id}`}>{d.tittle}</a>
                   </li>
                 );
               })}

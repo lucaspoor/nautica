@@ -11,7 +11,7 @@ export default function Products(props) {
           {data.map((d) => {
             return (
               <div className="card ">
-                <Link to={`/listadebotes?bote=${d.id}`}>
+                <a href={`/listadebotes?bote=${d.id}`}>
                   <div className="img">
                     <img src={d.imagen} alt="Boat" />
                   </div>
@@ -50,7 +50,7 @@ export default function Products(props) {
                       <span>{d.info}</span>
                     </div>
                   </div>
-                </Link>
+                </a>
               </div>
             );
           })}
