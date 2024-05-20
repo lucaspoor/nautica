@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 export default function Info() {
   return (
@@ -31,7 +32,11 @@ export default function Info() {
           </article>
 
           <article className="img col">
-            <img src="/imgs/lanchasinfo3(1).png" alt="Img" />
+            <StaticImage
+              src="../../images/personas-disfrutando.png"
+              alt="Personas disfrutando"
+            />
+            ;
           </article>
         </article>
       </div>

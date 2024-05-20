@@ -4,6 +4,7 @@ import MainComponent from "../components/maincomponent";
 import React from "react";
 import main from "../jspelado/main";
 import ClickToChat from "../components/utils/clicktochat";
+import { Delfin } from "../components/Delfin";
 
 function PageMain() {
   React.useEffect(() => {
