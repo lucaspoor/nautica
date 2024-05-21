@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 export const barra: React.CSSProperties = {
   padding: ".75em 1em",
-  backgroundColor: "black",
+  backgroundColor: "var(--footer)",
   color: "white",
   display: "flex",
   margin: "0 0 1em",

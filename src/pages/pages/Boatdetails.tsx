@@ -5,6 +5,7 @@ import ClickToChat from "../components/utils/clicktochat";
 import ReactNavBar from "../components/reactnavbar";
 import { BoatsDatabase } from "../../BoatsDatabase";
 import { BarraExploracion } from "./BarraExploracion";
+import { FormContactoDetail } from "../components/formcontactodetail";
 
 export function BoatDetails({ bote }) {
   const casco = bote.materialCasco;
@@ -207,28 +208,7 @@ export function BoatDetails({ bote }) {
             </div>
             <div className="contact-seller">
               <h3>Mensaje al vendedor</h3>
-              <form action="#">
-                <input
-                  type="text"
-                  name="name"
-                  id="client-name"
-                  placeholder="Nombre"
-                  required
-                />
-                <textarea
-                  name="message"
-                  id="message"
-                  rows={10}
-                  placeholder="Deja Tu Mensaje"
-                  required
-                  defaultValue={""}
-                />
-                <input
-                  type="submit"
-                  defaultValue="Send Message Now"
-                  id="send-message"
-                />
-              </form>
+              <FormContactoDetail bote={bote}></FormContactoDetail>
             </div>
           </article>
         </div>

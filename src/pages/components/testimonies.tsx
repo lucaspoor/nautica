@@ -1,7 +1,7 @@
 import React from "react";
 export default function Testimonies() {
   return (
-    <section className="people-says">
+    <section className="people-says" style={{ display: "none" }}>
       <div className="head">
         <h2>Que opinan nuestros clientes</h2>
         <img src="/imgs/decoreGold.png" alt="img" />

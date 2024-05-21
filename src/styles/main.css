@@ -675,7 +675,7 @@ header .container .data .phone {
 /* end landing  */
 /*  start Providing section */
 .providing {
-  margin-top: 200px;
+  margin-top: 130px;
   margin-bottom: 110px;
 }
 /* at mob screens */
@@ -1456,4 +1456,12 @@ div.valid-feedback {
   background-color: white !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+div.contact-seller div.invalid-feedback,
+div.contact-seller div.valid-feedback {
+  background-color: #f2f6f7 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 1.25em !important;
 }
