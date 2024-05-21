@@ -3,11 +3,14 @@ import React from "react";
 import Footer from "../components/footer";
 import ClickToChat from "../components/utils/clicktochat";
 import ReactNavBar from "../components/reactnavbar";
-import { BoatsDatabase } from "../../BoatsDatabase";
+import { BoatsDatabase } from "../BoatsDatabase";
 import { BarraExploracion } from "./BarraExploracion";
 import { FormContactoDetail } from "../components/formcontactodetail";
 
+export default BoatDetails;
 export function BoatDetails({ bote }) {
+  if (!bote) return null;
+
   const casco = bote.materialCasco;
   const [prev, next] = BoatsDatabase.findPrevNext(bote);
   //   console.lo g(casco.value);

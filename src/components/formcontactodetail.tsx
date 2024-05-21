@@ -8,7 +8,7 @@ const { Formik } = formik;
 
 const schema = yup.object().shape({
   nombre: yup.string().required("Por favor ingrese el nombre"),
-  asunto: yup.string().required("Por favor ingrese el asunto"),
+
   email: yup
     .string()
     .email("Email inválido")
@@ -18,7 +18,6 @@ const schema = yup.object().shape({
 
 interface DatosEmail {
   nombre: string;
-  asunto: string;
   email: string;
   mensaje: string;
 }
@@ -27,7 +26,8 @@ type ServerState = {
   ok: boolean;
   msg: string;
 };
-export function FormContacto() {
+export default FormContactoDetail;
+export function FormContactoDetail({ bote }: { bote: Bote }) {
   const [serverState, setServerState] = useState<ServerState>();
   const handleServerResponse = (ok: boolean, msg: string) => {
     setServerState({ ok, msg });
@@ -36,15 +36,15 @@ export function FormContacto() {
   const handleOnSubmit = (values: DatosEmail, actions: any) => {
     axios({
       method: "POST",
-      url: "https://formspree.io/f/mqkrjdlz",
-      data: values,
+      url: "https://formspree.io/f/mdoqvawy",
+      data: { ...values, asunto: `Consulta: ${bote?.tittle}` },
     })
       .then(() => {
         actions.setSubmitting(false);
         actions.resetForm();
         handleServerResponse(
           true,
-          "Hemos enviado su formulario, lo revisaremos a la brevedad."
+          "Hemos enviado su mensaje, lo revisaremos a la brevedad."
         );
       })
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -60,7 +60,6 @@ export function FormContacto() {
       onSubmit={handleOnSubmit}
       initialValues={{
         nombre: "",
-        asunto: "",
         email: "",
         mensaje: "",
       }}
@@ -95,25 +94,6 @@ export function FormContacto() {
 
           <Form.Control
             type="text"
-            name="asunto"
-            value={values.asunto}
-            placeholder="Asunto"
-            onChange={handleChange}
-            isValid={touched.asunto && !errors.asunto}
-            isInvalid={!!errors.asunto}
-          />
-
-          {touched.asunto && !errors.asunto && (
-            <Form.Control.Feedback>Se ve bien!</Form.Control.Feedback>
-          )}
-          {touched.asunto && errors.asunto && (
-            <Form.Control.Feedback type="invalid">
-              {errors.asunto}
-            </Form.Control.Feedback>
-          )}
-
-          <Form.Control
-            type="text"
             placeholder="Email"
             aria-describedby="inputGroupPrepend"
             name="email"
@@ -142,9 +122,14 @@ export function FormContacto() {
             isInvalid={!!errors.mensaje}
           />
 
-          <Form.Control.Feedback type="invalid">
-            {errors.mensaje}
-          </Form.Control.Feedback>
+          {touched.mensaje && !errors.mensaje && (
+            <Form.Control.Feedback>Se ve bien!</Form.Control.Feedback>
+          )}
+          {touched.mensaje && errors.mensaje && (
+            <Form.Control.Feedback type="invalid">
+              {errors.mensaje}
+            </Form.Control.Feedback>
+          )}
 
           <Button
             className="botoncontacto"

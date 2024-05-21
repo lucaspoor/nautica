@@ -11,6 +11,7 @@ export const barra: React.CSSProperties = {
   justifyContent: "space-between",
 };
 
+export default BarraExploracion;
 export function BarraExploracion({
   prev,
   bote,
@@ -20,6 +21,7 @@ export function BarraExploracion({
   bote: any;
   next: Bote;
 }) {
+  if (!bote) return null;
   return (
     <div style={barra}>
       <LinkBotePrev bote={prev} />

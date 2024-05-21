@@ -5,7 +5,7 @@ import { ScrollToTop } from "./ScrollToTop";
 import "./App.css";
 
 import BoatsPage from "./pages/boatslistpage";
-import PageMain from "./pages/pagemain";
+import PageMain from "./pagemain";
 import { BoteContainer } from "./container/BoteContainer";
 
 const pageStyles = {

@@ -1,3 +1,4 @@
+export default boatlist;
 export function boatlist() {
   try {
     let filterButtons = document.querySelectorAll(".drop-down"),
@@ -109,5 +110,3 @@ export function boatlist() {
   } catch {}
   // Reset the values onclick
 }
-
-export default boatlist;

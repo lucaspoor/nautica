@@ -1,4 +1,4 @@
-import data from "./pages/data/boats.json";
+import data from "./data/boats.json";
 
 export class BoatsDatabase {
   /**
