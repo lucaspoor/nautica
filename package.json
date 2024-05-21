@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "npm run build && cd public && rsync -avz . lucas@fuego.welinux.cl:/var/www/nauticacalderon"
   },
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.35",

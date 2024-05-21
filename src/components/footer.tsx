@@ -7,7 +7,7 @@ export default function Footer() {
       <footer>
         <div className="container">
           <div className="col">
-            <a href="#">
+            <a href="/#linkinicio">
               {" "}
               <img src="/imgs/logo-light.png" alt="Logo" />
             </a>
@@ -18,7 +18,7 @@ export default function Footer() {
             </p>
             <h2 className="mt-0 ">¡Ven y conoce nuestras lanchas!</h2>
 
-            <a href="#linkcontacto" className="confirm ">
+            <a href="/#linkcontacto" className="confirm ">
               {" "}
               AGENDAR VISITA
             </a>
@@ -27,16 +27,16 @@ export default function Footer() {
             <h2>Secciones</h2>
             <ul>
               <li>
-                <a href="#"> Volver al Inicio</a>
+                <a href="/#linkinicio"> Volver al Inicio</a>
               </li>
               <li>
-                <a href="#fleet"> Nuestras Lanchas</a>
+                <a href="/#fleet"> Nuestras Lanchas</a>
               </li>
               <li>
-                <a href="#linkinformacion">Información de Nosotros</a>
+                <a href="/#linkinformacion">Información de Nosotros</a>
               </li>
 
-              <li>
+              <li style={{ display: "none" }}>
                 <a href="#">Ver los Testimonios</a>
               </li>
               <li>
@@ -50,7 +50,9 @@ export default function Footer() {
               {data.map((d) => {
                 return (
                   <li>
-                    <a href={`/listadebotes?bote=${d.id}`}>{d.tittle}</a>
+                    <p style={{ color: "white", marginBottom: "1em" }}>
+                      {d.tittle}
+                    </p>
                   </li>
                 );
               })}

@@ -10,7 +10,7 @@ export default function ReactNavBar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg flex-between reactnav centernav">
-        <a href="/">
+        <a href="/#linkinicio">
           <img src="/imgs/logo-light.png" alt="Logo" className="logo mlogo" />
         </a>
         <button
@@ -27,7 +27,10 @@ export default function ReactNavBar() {
         </button>
         <div className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="navbar-nav  ulnav">
-            <Link to="/#" className="list-item abootnav aBootstrap linknav">
+            <Link
+              to="/#linkinicio"
+              className="list-item abootnav aBootstrap linknav"
+            >
               INICIO
             </Link>
             <Link to="/#fleet" className="list-item  aBootstrap linknav">
@@ -45,7 +48,6 @@ export default function ReactNavBar() {
             >
               CONTACTO
             </Link>
-            <a href="/#linkcontacto"> canguro</a>
           </ul>
         </div>
 
@@ -54,7 +56,10 @@ export default function ReactNavBar() {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mr-auto ularreglo">
-            <Link to="/#" className="list-item abootnav aBootstrap f ">
+            <Link
+              to="/#linkinicio"
+              className="list-item abootnav aBootstrap f "
+            >
               INICIO
             </Link>
             <Link to="/#fleet" className="list-item  aBootstrap f">

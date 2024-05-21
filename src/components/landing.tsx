@@ -4,6 +4,7 @@ import NavBar from "./navbar";
 export default function Landing() {
   return (
     <section className="landing">
+      <div id="linkinicio"></div>
       <div className="container">
         <NavBar></NavBar>
 
